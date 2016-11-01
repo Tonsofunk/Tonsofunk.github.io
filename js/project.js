@@ -112,7 +112,7 @@ $('.popup-with-form').magnificPopup({
 		}
 });
 
- $('.gallery').masonry({
+ $('.gallery.masonry-gallery').masonry({
  	  itemSelector: '.thumbnail',
  	  percentPosition: true,
  	  columnWidth: '.thumbnail'
