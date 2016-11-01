@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    margin:0;
+    padding:0;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  display: block;
+  height: 100%;
+  background-color: #efebeb;
+  color: #787878;
+}
+
+html {
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.condo-container {
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+div.condo {
+    display: inline-block;
+}
+
+.condo-container {
+  padding: 0 auto;
+}
+
+.condo img {
+    width: 148px;
+    height: 148px;
+}
+
+.condo h3 {
+  text-align: center;
+}
+img.mfp-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #efebeb;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #b4b4b4;
+    text-align: center;
+    padding: 30px 16px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 30px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #079fde;
+color: ffffff;
+}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+
+
+section {
+    clear: both;
+}
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+section.module p {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  padding-top: 1em;
+  font-weight: 700;
+  line-height: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-size: 3em;
+}
+
+section.module.parallax h2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 2.5em;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+section.module.parallax-1 {
+  background-image: url("../img/mountain/skiliftmin.jpg");
+}
+section.module.parallax-2 {
+  background-image: url("../img/mountain/view2.jpg");
+}
+section.module.parallax-3 {
+  background-image: url("../img/mountain/lone_skier.jpg");
+}
+.module.parallax.parallax-1 h2 {
+    margin-bottom: .5em;
+}
+
+.sub-header {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    color: #f4f4f4;
+}
+
+.jumbler {
+    font-size: 2em;
+    display: inline;
+    text-decoration: underline;
+    margin: 0;
+    color: #f4f4f4;
+    font-family: 'Roboto Slab, Helvetica, Arial'
+}
+
+.explore {
+    font-size: 1em;
+    text-decoration: none;
+    color: #b4b4b4;
+}
+
+button {
+    font-size: 4em;
+    position: center;
+    padding: .275em .275em;
+    height: 100px;
+    width: 50%;
+}
+
+button a {
+    text-decoration: none;
+    color: #787878;
+    font-size: .5em;
+}
+
+.form {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#test-form {
+    margin: 30%;
+    border-right: 2px solid grey;
+    background-color: #f4f4f4;
+    padding: 2em;
+    text-overflow: none;
+}
+
+li {
+    font-size: 3em;
+    text-decoration-style: none;
+}
+
+ol {
+    list-style: none;
+}
+
+#name, #email #phone {
+    margin-left: 1%;
+}
+
+#questions {
+    height: 15%;
+    width: 100%;
+}
+
+footer, .footer {
+    background-color: #efebeb;
+    color: inherit;
+    width: 100%;
+    height: 50px;
+}
+
+footer nav a {
+    float: right;
+    display: inline;
+    color: inherit;
+    padding: .5em .5em;
+    font-size: 1em;
+    text-decoration: none;
+    clear: left;
+    height: 100%;
+    font: inherit;
+}
+
+footer nav {
+    overflow: hidden;
+    height: 100%;
+}
+
+footer nav a:hover {
+    text-decoration: none;
+    background-color: #079fde;
+    color: #ffffff;
+}
+
+footer logo {
+    float: left;
+    font-size: 1em;
+    color: inherit;
+    clear: right; 
+    padding: 0, .5em, .5em, 0;         
+}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:768px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:768px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  section.module h2 {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  }
+
+  .condo img {
+    width: 239px;
+    height: 239px;
+  }
+
+  #test-form {
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  section.module.parallax h1 {
+    font-size: 1.5em;
+    line-height: 60px;
+    padding-top: 6em;
+  }
+
+  section.module.parallax h2 {
+    font-size: 1.5em;
+  }
+
+  section.module h2 {
+  margin-bottom: 1em;
+  font-size: 1em;
+  }
+
+  section.module p {
+  margin-bottom: 1em;
+  font-size: .75em;
+  }
+
+  .condo img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .jumbler {
+    font-size: 1em;
+  }
+
+  button {
+    width: 100%;
+  }
+.popup-with-form {
+  font-size: .3em;
+}
+
+#test-form {
+  margin: 0;
+}
+}
+
+@media screen and (max-width: 380px) {
+  .condo img {
+    width: 140px;
+    height: 140px;
+  }
+  }
