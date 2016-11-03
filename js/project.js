@@ -1,5 +1,5 @@
 
-$(document).ready(function(){/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+//$(document).ready(function(){/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -120,4 +120,4 @@ if ($('.gallery.masonry-gallery').length) {
 	 });
 }
 //if thing in the parenthesis is true then run. something.length
-});
+//});
