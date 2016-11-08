@@ -1,5 +1,5 @@
 
-//$(document).ready(function(){/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+$(document).ready(function(){/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -8,6 +8,14 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+$('#nav-trigger').on('click', function(e){
+	e.preventDefault();
+	myFunction();
+});
+
+
+
 
 $(".jumbler").typed({
 	strings: ["", "", "Skiing.", "Golfing.", "Hot Chocolate.", "Jacuzzis.", "Fine-Dining.", "Snow Tubing.", "Snow Boarding.", "Snow Ball Fights!", "Luxury.", "The Green Mountain Resort at Killington, Vermont."],
@@ -129,4 +137,4 @@ if ($('.gallery.masonry-gallery').length) {
 	 });
 }
 //if thing in the parenthesis is true then run. something.length
-//});
+});
