@@ -118,6 +118,15 @@ if ($('.gallery.masonry-gallery').length) {
 	 	  percentPosition: true,
 	 	  columnWidth: '.thumbnail'
 	 });
+
+	 // init Masonry
+	 var $grid = $('.grid').masonry({
+	//   // options...
+	});
+	// // layout Masonry after each image loads
+	$grid.imagesLoaded().progress( function() {
+	   $grid.masonry('layout');
+	 });
 }
 //if thing in the parenthesis is true then run. something.length
 //});
