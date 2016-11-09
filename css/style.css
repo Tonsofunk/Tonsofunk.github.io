@@ -144,9 +144,10 @@ section.module.parallax h2 {
   height: 600px;
   width: 100%;
 }
-/*section.module.parallax-1 {
+section.module.parallax-1 {
   background-image: url("../img/mountain/mountian10supersmall.jpg");
-}*/
+  background-size: cover;
+}
 /*section.module.parallax-2 {
   background-image: url("../img/mountain/view2small.jpg");
 }

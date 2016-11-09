@@ -1,5 +1,11 @@
 
 $(document).ready(function(){/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+
+// add class called loaded to the body. 
+// in the css as soon as body class loads, remove the background image. 
+
+
+
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
