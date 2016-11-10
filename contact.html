@@ -5,11 +5,8 @@
 		<title>Rent Killington Vermont</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet">
-		<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/base.css">
 		<link rel="stylesheet" type="text/css" href="css/contact.css">
-		<link rel="stylesheet" href="js/magnific-popup-master/dist/magnific-popup.css">
-		<link rel="stylesheet" type="text/css" href="css/masonry.css">
+		<link rel="stylesheet" href="js/Magnific-Popup-master/dist/magnific-popup.css">
 		<meta name="viewport" content="width=device-width">
 		<script src="js/modernizr.js"></script>
 	</head>
@@ -22,11 +19,11 @@
 	  			<li><a href="condos.html">Condos</a></li>
 	  			<li><a href="photo-gallery.html">Photo Gallery</a></li>
 	  			<li class="icon">
-	    			<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+	    			<a href="#" id="nav-trigger">&#9776;</a>
 	  			</li>
 			</ul>
 		</header>
-		<section class="module parallax parallax-1">
+		<section class="module parallax parallax-1 parallax-container" data-parallax="scroll" data-image-src="img/mountain/Panarama.jpg">
 		       <div class="container">
 		         	<h1>Contact Us</h1>
 		       </div>
@@ -45,25 +42,27 @@ Maecenas sit amet bibendum est, a convallis arcu. Fusce hendrerit magna mauris, 
         		</div>
         	</div>
       	</section>
-		<div class="container" class="footer">
-		   	<footer>
-				<logo>| The Green Mountain Resort | </logo>
-				<nav>
-					<a href="photo-gallery.html"> Photo Gallery </a>
-					<a href="condo.html"> Condos </a>
-					<a href="contact.html"> Contact </a>
-					<a href="about.html"> About </a>
-					<a href="index.html"> Home </a>
-				</nav>
-			</footer>
+
+      	<div class="container">
+			<ul class="bottomnav" id="myBottomnav">
+
+		  			<li><a href="photo-gallery.html">Photo Gallery</a></li>
+		  			<li><a href="condos.html">Condos</a></li>
+		  			<li><a href="about.html">About</a></li>
+		  			<li><a href="contact.html">Contact</a></li>
+		  			<li><a href="index.html">Home</a></li>
+		  			<li id="logo"><a href="410-215-4852">| Call Jules ~ 410-215-4852 |</a></li>
+			</ul>
 		</div>
 
 	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/typed.js"></script>
 	<script src="js/jquery.cycle2.min.js"></script>
-	<script src="js/magnific-popup-master/dist/jquery.magnific-popup.js"></script>
+	<script src="js/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
 	 <!-- <script src="https://npmcdn.com/masonry-layout@4.1/dist/masonry.pkgd.js"></script> -->
-	 <script src="js/masonry.js"></script>
+	<script src="js/masonry.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+	<script src="js/parallax.min.js"></script>
 <!-- 	 <script type="masonry-docs.min.js"></script>
  -->	<script type="text/javascript" src="js/project.js"></script>
 	</body>

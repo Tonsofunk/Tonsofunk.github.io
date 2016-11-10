@@ -4,7 +4,9 @@ $(document).ready(function(){/* Toggle between adding and removing the "responsi
 // add class called loaded to the body. 
 // in the css as soon as body class loads, remove the background image. 
 
-
+// $("").loaded(function(){
+//     $("").addClass("loaded");
+// });
 
 function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -19,8 +21,6 @@ $('#nav-trigger').on('click', function(e){
 	e.preventDefault();
 	myFunction();
 });
-
-
 
 
 $(".jumbler").typed({
@@ -141,6 +141,7 @@ if ($('.gallery.masonry-gallery').length) {
 	$grid.imagesLoaded().progress( function() {
 	   $grid.masonry('layout');
 	 });
+	$grid.masonry('reloadItems');
 }
 //if thing in the parenthesis is true then run. something.length
 });

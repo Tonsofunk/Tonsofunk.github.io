@@ -70,8 +70,18 @@ ul.topnav {
     background-color: #efebeb;
 }
 
+ul.bottomnav {
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #efebeb;
+}
+
 /* Float the list items side by side */
 ul.topnav li {float: left;}
+
+ul.bottomnav li {float: right;}
 
 /* Style the links inside the list items */
 ul.topnav li a {
@@ -84,10 +94,27 @@ ul.topnav li a {
     font-size: 30px;
 }
 
+ul.bottomnav li a {
+  display: inline-block;
+    color: #b4b4b4;
+    text-align: center;
+    padding: 30px 16px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#logo {
+    float: left;
+}
 /* Change background color of links on hover */
 ul.topnav li a:hover {background-color: #079fde;
 color: ffffff;
 }
+
+ul.bottomnav li a:hover {background-color: #079fde;
+color: ffffff;
+}
+
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
 ul.topnav li.icon {display: none;}
@@ -144,7 +171,12 @@ section.module.parallax h2 {
   text-align: center;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-section.module.parallax-1 {
+
+.parallax-container {
+  height: 600px;
+  width: 100%;
+}
+/*section.module.parallax-1 {
   background-image: url("../img/mountain/Panarama.jpg");
 }
 section.module.parallax-2 {
@@ -152,7 +184,7 @@ section.module.parallax-2 {
 }
 section.module.parallax-3 {
   background-image: url("../img/mountain/lone_skier.jpg");
-}
+}*/
 .module.parallax.parallax-1 h2 {
     margin-bottom: .5em;
 }
