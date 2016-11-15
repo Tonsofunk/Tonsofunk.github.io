@@ -137,11 +137,12 @@ if ($('.gallery.masonry-gallery').length) {
 	 var $grid = $('.grid').masonry({
 	//   // options...
 	});
-	// // layout Masonry after each image loads
-	$grid.imagesLoaded().progress( function() {
-	   $grid.masonry('layout');
-	 });
-	$grid.masonry('reloadItems');
 }
+
+$("img").unveil(200, function() {
+  $(this).load(function() {
+    this.style.opacity = 1;
+  });
+});
 //if thing in the parenthesis is true then run. something.length
 });
