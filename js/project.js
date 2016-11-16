@@ -139,10 +139,18 @@ if ($('.gallery.masonry-gallery').length) {
 	});
 }
 
+var $grid = $('.gallery.masonry-gallery').imagesLoaded( function() {
+  $grid.masonry({
+    itemSelector: '.thumbnail',
+    percentPosition: true,
+    // columnWidth: '.grid-sizer'
+  }); 
+});
+
 // layout Isotope after each image loads
-$('thumbnail').imagesLoaded().progress( function() {
-  $('.thumbnail').masonry();
-});  
+// $('thumbnail').imagesLoaded().progress( function() {
+//   $('.thumbnail').masonry();
+// });  
 
 
 //if thing in the parenthesis is true then run. something.length
