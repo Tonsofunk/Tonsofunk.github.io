@@ -147,6 +147,9 @@ var $grid = $('.gallery.masonry-gallery').imagesLoaded( function() {
   }); 
 });
 
+
+    $("img.lazy").lazyload();
+
 // layout Isotope after each image loads
 // $('thumbnail').imagesLoaded().progress( function() {
 //   $('.thumbnail').masonry();
