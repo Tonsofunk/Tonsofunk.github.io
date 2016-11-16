@@ -139,10 +139,11 @@ if ($('.gallery.masonry-gallery').length) {
 	});
 }
 
-$("img").unveil(200, function() {
-  $(this).load(function() {
-    this.style.opacity = 1;
-  });
-});
+// layout Isotope after each image loads
+$('thumbnail').imagesLoaded().progress( function() {
+  $('.thumbnail').masonry();
+});  
+
+
 //if thing in the parenthesis is true then run. something.length
 });
