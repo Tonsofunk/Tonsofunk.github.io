@@ -67,8 +67,18 @@ ul.topnav {
     background-color: #efebeb;
 }
 
+ul.bottomnav {
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #efebeb;
+}
+
 /* Float the list items side by side */
 ul.topnav li {float: left;}
+
+ul.bottomnav li {float: right;}
 
 /* Style the links inside the list items */
 ul.topnav li a {
@@ -81,10 +91,27 @@ ul.topnav li a {
     font-size: 30px;
 }
 
+ul.bottomnav li a {
+  display: inline-block;
+    color: #b4b4b4;
+    text-align: center;
+    padding: 30px 16px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#logo {
+    float: left;
+}
 /* Change background color of links on hover */
 ul.topnav li a:hover {background-color: #079fde;
 color: ffffff;
 }
+
+ul.bottomnav li a:hover {background-color: #079fde;
+color: ffffff;
+}
+
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
 ul.topnav li.icon {display: none;}
@@ -225,7 +252,7 @@ ol {
     width: 100%;
 }
 
-footer, .footer {
+/*footer, .footer {
     background-color: #efebeb;
     color: inherit;
     width: 100%;
@@ -261,7 +288,7 @@ footer logo {
     color: inherit;
     clear: right; 
     padding: 0, .5em, .5em, 0;         
-}
+}*/
 
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
 @media screen and (max-width:768px) {
@@ -269,6 +296,9 @@ footer logo {
   ul.topnav li.icon {
     float: right;
     display: inline-block;
+  }
+  ul.bottomnav {
+    display: none;
   }
 }
 

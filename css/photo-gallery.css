@@ -65,8 +65,18 @@ ul.topnav {
     background-color: #efebeb;
 }
 
+ul.bottomnav {
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #efebeb;
+}
+
 /* Float the list items side by side */
 ul.topnav li {float: left;}
+
+ul.bottomnav li {float: right;}
 
 /* Style the links inside the list items */
 ul.topnav li a {
@@ -79,10 +89,27 @@ ul.topnav li a {
     font-size: 30px;
 }
 
+ul.bottomnav li a {
+  display: inline-block;
+    color: #b4b4b4;
+    text-align: center;
+    padding: 30px 16px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#logo {
+    float: left;
+}
 /* Change background color of links on hover */
 ul.topnav li a:hover {background-color: #079fde;
 color: ffffff;
 }
+
+ul.bottomnav li a:hover {background-color: #079fde;
+color: ffffff;
+}
+
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
 ul.topnav li.icon {display: none;}
@@ -267,6 +294,9 @@ footer logo {
   ul.topnav li.icon {
     float: right;
     display: inline-block;
+  }
+  ul.bottomnav {
+    display: none;
   }
 }
 

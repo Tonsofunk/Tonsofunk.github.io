@@ -302,6 +302,10 @@ footer logo {
     float: right;
     display: inline-block;
   }
+  
+  ul.bottomnav {
+    display: none;
+  }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
