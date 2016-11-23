@@ -208,19 +208,20 @@ section.module.parallax-3 {
 }
 
 button {
-    font-size: 4em;
-    position: center;
+    font-size: 2em;
     padding: .275em .275em;
     height: 100px;
     width: 50%;
+    text-decoration: none;
+    color: #787878;
 }
 
-button a {
+/*button a {
     text-decoration: none;
     color: #787878;
     font-size: .5em;
 }
-
+*/
 .form {
     text-align: center;
     padding: 10px 0;

@@ -213,10 +213,13 @@ button {
     width: 50%;
 }
 
-button a {
+button {
+    font-size: 2em;
+    padding: .275em .275em;
+    height: 100px;
+    width: 50%;
     text-decoration: none;
     color: #787878;
-    font-size: .5em;
 }
 
 .form {
@@ -225,7 +228,7 @@ button a {
 }
 
 #test-form {
-    margin: 30%;
+    margin: 20%;
     border-right: 2px solid grey;
     background-color: #f4f4f4;
     padding: 2em;
